@@ -1,0 +1,7 @@
+<% @genre.pictures.each do |picture| %>
+    <div class="pictSpace">
+        <%= picture.name %>
+        <%= image_tag "#{picture.url}" %> 
+        <p>ダウンロード回数: </p><%= picture.download %>
+    </div>
+<% end %>
