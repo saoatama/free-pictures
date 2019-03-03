@@ -1,4 +1,5 @@
-<% @genre.pictures.each do |picture| %>
+<div class="overlay"></div>
+    <% @genre.pictures.each do |picture| %>
     <div class="pictSpace">
         <%= picture.name %>
         <%= image_tag "#{picture.url}", class: "source" %>
@@ -10,5 +11,23 @@
         <% end %>
         <p>ダウンロード回数: </p><%= picture.download %>
     </div>
-<% end %>
+    <% end %>
 
+<div class="sand">
+    <h2>ダウンロードありがとうございます</h2>
+    <p>引きつづきご利用の方お願いします</p>
+    <p>またTwitterなどで当サイトを拡散してもらえるとモチベーションにもつながるのでぜひお願いします</p>
+</div>
+
+<script>
+    $('document').ready(()=>{
+        $('.download_button').on('click', ()=> {
+            $('.sand').fadeIn(1000);
+            $('.overlay').fadeIn(1000);
+        })
+        $('.overlay').on('click', ()=> {
+            $('.sand').fadeOut(1000);
+            $('.overlay').fadeOut(1000);
+        })
+    })
+</script>
