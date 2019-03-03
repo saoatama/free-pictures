@@ -7,4 +7,6 @@ Rails.application.routes.draw do
   
   get "index" => "index#index"
   get "index/:id" => "index#show"
+  post "download" => "index#download"
+  get "download" => "index#download"
 end

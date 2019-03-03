@@ -8,4 +8,9 @@ class IndexController < ApplicationController
         @genres = Genre.all
         @genre = Genre.find(params[:id])
     end
+    
+    def download
+        download_file_name = "app/assets/images/#{params[:id]}"
+        send_file download_file_name
+    end
 end

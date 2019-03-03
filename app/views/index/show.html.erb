@@ -1,7 +1,14 @@
 <% @genre.pictures.each do |picture| %>
     <div class="pictSpace">
         <%= picture.name %>
-        <%= image_tag "#{picture.url}" %> 
+        <%= image_tag "#{picture.url}", class: "source" %>
+        
+        <%#= ダウンロードのやーつ%>
+        <%= form_tag(download_path, :method => 'post', id:"download") do %>
+            <%= hidden_field_tag :id, picture.url %>
+            <%= button_tag "ダウンロード", class: "download_button" %>
+        <% end %>
         <p>ダウンロード回数: </p><%= picture.download %>
     </div>
 <% end %>
+
