@@ -1,6 +1,8 @@
 class Admin::PicturesController < Admin::ApplicationController
   before_action :set_picture, only: [:show, :edit, :update, :destroy]
-
+  
+  layout 'admin'
+  
   # GET /pictures
   # GET /pictures.json
   def index
