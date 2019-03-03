@@ -10,7 +10,7 @@ class IndexController < ApplicationController
     end
     
     def download
-        download_file_name = "app/assets/images/#{params[:id]}"
+        download_file_name = "public#{params[:id]}"
         send_file download_file_name
     end
 end
