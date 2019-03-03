@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  genre: one
+  url: MyString
+  download-time: 1
+
+two:
+  name: MyString
+  genre: two
+  url: MyString
+  download-time: 1
