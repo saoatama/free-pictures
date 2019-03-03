@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :admins, path: :admin
   namespace :admin do
     resources :pictures
     resources :genres
