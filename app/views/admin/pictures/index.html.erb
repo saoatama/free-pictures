@@ -1,0 +1,36 @@
+<p id="notice"><%= notice %></p>
+
+<h1 class="title">Pictures</h1>
+<%= link_to "Genre", admin_genres_path, class:"another" %>
+<br>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Genre</th>
+      <th>Url</th>
+      <th>画像</th>
+      <th>Download</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @pictures.each do |picture| %>
+      <tr>
+        <td><%= picture.name %></td>
+        <td><%= picture.genre %></td>
+        <td><%= picture.url %></td>
+        <td><%= image_tag "#{picture.url}" %></td>
+        <td><%= picture.download %></td>
+        <td><%= link_to 'Show', [:admin, picture] %></td>
+        <td><%= link_to 'Edit', edit_admin_picture_path(picture) %></td>
+        <td><%= link_to 'Destroy', [:admin, picture], method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Picture', new_admin_picture_path, class:"new-create" %>

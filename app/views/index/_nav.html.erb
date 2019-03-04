@@ -1,0 +1,6 @@
+<ul id="link">
+    <li class="nav-link"><%= link_to "利用規約", "/"  %></li>
+    <% @genres.each do |genre| %>
+        <li class="nav-link"><%= link_to "#{genre.name}", "/index/#{genre.id}" %></li>
+    <% end %>
+</ul>
