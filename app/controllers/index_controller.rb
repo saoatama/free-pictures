@@ -10,7 +10,11 @@ class IndexController < ApplicationController
     end
     
     def download
-        download_file_name = "public#{params[:id]}"
+        @picture = Picture.find(params[:id])
+        download_file_name = "public#{@picture.url}"
         send_file download_file_name
+        
+        @picture.download += 1
+        @picture.save
     end
 end

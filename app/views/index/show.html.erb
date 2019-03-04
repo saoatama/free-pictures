@@ -8,7 +8,7 @@
         <%= image_tag "#{picture.url}", class: "source" %>
         <p>ダウンロード回数: <%= picture.download %></p>
         <%= form_tag(download_path, :method => 'post', id:"download") do %>
-            <%= hidden_field_tag :id, picture.url %>
+            <%= hidden_field_tag :id, picture.id %>
             <%= button_tag "ダウンロード", class: "download_button" %>
         <% end %>
     </div>
