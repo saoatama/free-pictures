@@ -1,3 +1,46 @@
+body {
+    font-family: sans-serif, 'メイリオ';
+    text-align: center;
+    background-color: #F5EBDC;
+}
+
+main {
+    padding: 2%;
+    color: #996776;
+    width: 80%;
+    margin-left: 8%;
+}
+
+#link {
+    background-color: #6E4A55;
+    font-size: 26px;
+    width: 80%;
+    margin-left: 8%;
+    border-radius: 10px;
+}
+
+.nav-link {
+    width: 15%;
+}
+
+a {
+    color: #F6E5CC;
+    text-decoration: none;
+}
+
+.download_button {
+    background-color: #6E4A55;
+    border-radius: 20px;
+    color: #F5EBDC;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#source-name {
+    font-size: 26px;
+    margin: -0.5% -1% 0% -1%;
+}
+
 .sand {
     z-index: 3;
     width: 50%;
@@ -22,6 +65,27 @@
 }
 
 .source {
-   width: 40%;
-   height: 100%;
+   width: 25%;
+   height: 40%;
+   clear: both;
+}
+
+.nav-link {
+    display: inline-block;
+    text-align: center;
+}
+
+.pictSpace {
+    display: inline-block;
+    text-align: center;
+    width: 40%;
+    height: 60%;
+    margin-left: -10%;
+    margin-right: -5%;
+}
+
+.bigger {
+    width: 50%;
+    height: 75%;
+    z-index: 3;
 }
