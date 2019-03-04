@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  devise_for :users, only: [:session] do
+  get '/sign_in' => 'devise/sessions#new'
+  post 'sign_in' => 'devise/sessions#create'
+  delete '/sign_out' => 'devise/sessions#destroy'
+end
   namespace :admin do
     resources :pictures
     resources :genres
