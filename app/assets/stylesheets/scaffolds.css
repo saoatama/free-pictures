@@ -91,6 +91,18 @@ h1.title {
 
 .another {
   margin-left: 15%;
+  float: left;
+}
+
+.logout {
+  margin-bottom: -5%;
+  margin-left: 5%;
+  color: #660080;
+  background-color: #e9bc00;
+  border-style: groove;
+  border-color: #e8dfba;
+  padding: 1%;
+  border-radius: 5px;
 }
 
 #table {
