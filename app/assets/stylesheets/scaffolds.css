@@ -1,6 +1,5 @@
 body {
-  background-color: #fff;
-  color: #333;
+  background-color: #e8dda2;
   margin: 33px;
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
@@ -20,31 +19,38 @@ pre {
 }
 
 a {
-  color: #000;
+  text-decoration: none;
+  background-color: #e9bc00;
+  border-style: groove;
+  border-color: #e8dfba;
+  padding: 1%;
+  margin-top: 10px;
+  border-radius: 5px;
+}
 
-  &:visited {
-    color: #666;
-  }
+a:hover {
+  background-color: #ba00e8;
+  color: #dfbae8;
+}
 
-  &:hover {
-    color: #fff;
-    background-color: #000;
-  }
+table {
+  margin-top: 5%;
 }
 
 th {
-  padding-bottom: 5px;
+  padding-bottom: 2%;
+  margin-top: 10%;
+  overflow: both;
+}
+
+thead {
+  background-color: #e9bc00;
 }
 
 td {
   padding: 0 5px 7px;
 }
 
-div {
-  &.field, &.actions {
-    margin-bottom: 10px;
-  }
-}
 
 #notice {
   color: green;
@@ -62,21 +68,6 @@ div {
   padding: 7px 7px 0;
   margin-bottom: 20px;
   background-color: #f0f0f0;
-
-  h2 {
-    text-align: left;
-    font-weight: bold;
-    padding: 5px 5px 5px 15px;
-    font-size: 12px;
-    margin: -7px -7px 0;
-    background-color: #c00;
-    color: #fff;
-  }
-
-  ul li {
-    font-size: 12px;
-    list-style: square;
-  }
 }
 
 label {
@@ -86,4 +77,42 @@ label {
 img {
   width: 100px;
   height: 100px;
+}
+
+input {
+  background-color: #e8c32e;
+}
+
+h1.title {
+  margin-bottom: -2%;
+  margin-top: -0.5%;
+  float: left;
+}
+
+.another {
+  margin-left: 15%;
+}
+
+#table {
+  overflow: both;
+}
+
+.new-create {
+  font-size: 20px;
+}
+
+.submit {
+  color: #660080;
+  background-color: #e9bc00;
+  border-style: groove;
+  border-color: #e8dfba;
+  padding: 1%;
+  border-radius: 5px;
+  
+}
+
+.submit:hover {
+  background-color: #ba00e8;
+  color: #dfbae8;
+
 }
