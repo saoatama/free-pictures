@@ -4,19 +4,23 @@
     <title>FreePicture</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
-    <%= stylesheet_link_tag    'index', media: 'all', 'data-turbolinks-track': 'reload' %>
     <title>黒髪美少女激推し劇場</title>
+    <%= stylesheet_link_tag    'index', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    
+    <meta name="twitter:card" content="summary" /> 
+    <meta name="twitter:site" content="@saoatama" />
+    <meta property="og:url" content="https://hidden-beyond-10811.herokuapp.com/" /> 
+    <meta property="og:title" content="黒髪美少女激推し劇場" />
+    <meta property="og:description" content="書誌情報をお手軽に参考文献の形式に変換します。レポートや卒論の効率化に役立ててください" /> 
+    <meta property="og:image" content="girltitle.png" />
   </head>
 
   <body>
       <header>
-          <%= render 'index/header' %>
-      </header>
-      <nav>
           <%= render 'index/nav' %>
-      </nav>
+          <%= image_tag 'girltitle', class:"title" %>
+      </header>
       <main>
           <%= yield %>
       </main>

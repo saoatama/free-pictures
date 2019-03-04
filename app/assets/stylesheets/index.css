@@ -65,8 +65,8 @@ a {
 }
 
 .source {
-   width: 25%;
-   height: 40%;
+   width: 40%;
+   height: 60%;
    clear: both;
 }
 
@@ -85,7 +85,12 @@ a {
 }
 
 .bigger {
-    width: 50%;
-    height: 75%;
+    width: 60%;
+    height: 80%;
     z-index: 3;
+}
+
+.title {
+    width: 80%;
+    height: 50%;
 }
