@@ -1,7 +1,8 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Genres</h1>
-
+<h1 class="title">Genres</h1>
+<%= link_to 'Picture', admin_pictures_path, class:"another" %>
+<br>
 <table>
   <thead>
     <tr>
@@ -14,7 +15,6 @@
     <% @genres.each do |genre| %>
       <tr>
         <td><%= genre.name %></td>
-        <td><%= link_to 'Show', [:admin, genre] %></td>
         <td><%= link_to 'Edit', edit_admin_genre_path(genre) %></td>
         <td><%= link_to 'Destroy', [:admin, genre], method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
@@ -24,4 +24,4 @@
 
 <br>
 
-<%= link_to 'New Picture', new_admin_genre_path %>
+<%= link_to 'New Picture', new_admin_genre_path, class:"new-create" %>

@@ -1,7 +1,8 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Pictures</h1>
-
+<h1 class="title">Pictures</h1>
+<%= link_to "Genre", admin_genres_path, class:"another" %>
+<br>
 <table>
   <thead>
     <tr>
@@ -32,4 +33,4 @@
 
 <br>
 
-<%= link_to 'New Picture', new_admin_picture_path %>
+<%= link_to 'New Picture', new_admin_picture_path, class:"new-create" %>
