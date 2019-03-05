@@ -2,7 +2,12 @@
 SitemapGenerator::Sitemap.default_host = "https://hidden-beyond-10811.herokuapp.com"
 SitemapGenerator::Sitemap.create do
   add root_path, :priority => 0.7, :changefreq => 'monthly'
-  add 'index/:id', :priority => 0.9, :changefreq => 'weekly'
+  add 'index/1', :priority => 0.9, :changefreq => 'weekly'
+  add 'index/2', :priority => 0.9, :changefreq => 'weekly'
+  add 'index/3', :priority => 0.9, :changefreq => 'weekly'
+  add 'index/4', :priority => 0.9, :changefreq => 'weekly'
+
+
   # Put links creation logic here.
   #
   # The root path '/' and sitemap index file are added automatically for you.
