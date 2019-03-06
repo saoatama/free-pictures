@@ -1,11 +1,11 @@
 class IndexController < ApplicationController
     layout 'index'
+    before_action :genre_all, only: [:index, :show, :contact]
+    
     def index
-        @genres = Genre.all
     end
     
     def show
-        @genres = Genre.all
         @genre = Genre.find(params[:id])
     end
     
@@ -19,5 +19,13 @@ class IndexController < ApplicationController
     def read
         @picture = Picture.find(params[:id])
         send_data(@picture.photo)
+    end
+    
+    def contact
+    end
+    
+    private
+    def genre_all
+        @genres = Genre.all
     end
 end

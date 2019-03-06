@@ -65,8 +65,8 @@ a {
 }
 
 .source {
-   width: 40%;
-   height: 60%;
+   width: 100px;
+   height: 150px;
    clear: both;
 }
 
@@ -99,4 +99,8 @@ a {
     font-size: 20px;
     margin: -2% -2% -2% 25%;
     width: 55%;
+}
+
+.mytwitter {
+    color: #996776;
 }

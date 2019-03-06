@@ -15,4 +15,5 @@ end
   post "download" => "index#download"
   get "download" => "index#download"
   get "read" => "index#read"
+  get "contact" => "index#contact"
 end
