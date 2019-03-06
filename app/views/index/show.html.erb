@@ -5,7 +5,7 @@
             <%= picture.name %>
         </p>
         <br>
-        <%= image_tag "#{picture.url}", class: "source" %>
+        <%= image_tag(read_path(picture, id: picture.id), alt: picture.name, :size => '40x40', :class => "source") %>
         <p>ダウンロード回数: <%= picture.download %></p>
         <%= form_tag(download_path, :method => 'post', id:"download") do %>
             <%= hidden_field_tag :id, picture.id %>

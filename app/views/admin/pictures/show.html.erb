@@ -12,7 +12,8 @@
 
 <p>
   <strong>Url:</strong>
-  <%= @picture.url %>
+  <%#= @picture.photo %>
+  <%= image_tag(read_path(@picture, id: @picture.id), alt: @picture.name, :size => '40x40') %>
 </p>
 
 <p>

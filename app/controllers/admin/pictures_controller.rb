@@ -26,6 +26,15 @@ class Admin::PicturesController < Admin::ApplicationController
   # POST /pictures
   # POST /pictures.json
   def create
+    photo = picture_params[:photo]
+    genre = picture_params[:genre_id]
+    name = picture_params[:name]
+    download = picture_params[:download]
+    picture_params = {}
+    picture_params[:photo] = photo.read
+    picture_params[:genre_id] = genre
+    picture_params[:name] = name
+    picture_params[:download] = download
     @picture = Picture.new(picture_params)
 
     respond_to do |format|
@@ -42,6 +51,13 @@ class Admin::PicturesController < Admin::ApplicationController
   # PATCH/PUT /pictures/1
   # PATCH/PUT /pictures/1.json
   def update
+    photo = picture_params[:photo]
+    genre = picture_params[:genre_id]
+    name = picture_params[:name]
+    picture_params = {}
+    picture_params[:photo] = photo.read
+    picture_params[:genre_id] = genre
+    picture_params[:name] = name
     respond_to do |format|
       if @picture.update(picture_params)
         format.html { redirect_to admin_picture_url, notice: 'Picture was successfully updated.' }
@@ -71,6 +87,6 @@ class Admin::PicturesController < Admin::ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def picture_params
-      params.require(:picture).permit(:name, :genre_id, :url, :download)
+      params.require(:picture).permit(:name, :genre_id, :download, :photo)
     end
 end

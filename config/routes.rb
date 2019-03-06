@@ -14,4 +14,5 @@ end
   get "index/:id" => "index#show"
   post "download" => "index#download"
   get "download" => "index#download"
+  get "read" => "index#read"
 end
