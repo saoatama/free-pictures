@@ -97,5 +97,6 @@ a {
 
 #source-description {
     font-size: 20px;
-    margin: -2% -2% -2% -2%;
+    margin: -2% -2% -2% 25%;
+    width: 55%;
 }
