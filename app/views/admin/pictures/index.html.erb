@@ -11,6 +11,7 @@
       <th>Genre</th>
       <th>画像</th>
       <th>Download</th>
+      <th>内容説明</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -22,6 +23,7 @@
         <td><%= picture.genre %></td>
         <td><%= image_tag(read_path(picture, id: picture.id), alt: picture.name, :size => '40x40') %></td>
         <td><%= picture.download %></td>
+        <td><%= picture.description %></td>
         <td><%= link_to 'Show', [:admin, picture] %></td>
         <td><%= link_to 'Edit', edit_admin_picture_path(picture) %></td>
         <td><%= link_to 'Destroy', [:admin, picture], method: :delete, data: { confirm: 'Are you sure?' } %></td>

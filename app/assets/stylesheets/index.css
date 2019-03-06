@@ -37,8 +37,8 @@ a {
 }
 
 #source-name {
-    font-size: 26px;
-    margin: -0.5% -1% 0% -1%;
+    font-size: 20px;
+    margin: 5% -5% -2% -2%;
 }
 
 .sand {
@@ -80,8 +80,8 @@ a {
     text-align: center;
     width: 40%;
     height: 60%;
-    margin-left: -10%;
-    margin-right: -5%;
+    margin: 0% 0% -10% -10%;
+    padding: -2%;
 }
 
 .bigger {
@@ -93,4 +93,9 @@ a {
 .title {
     width: 80%;
     height: 50%;
+}
+
+#source-description {
+    font-size: 20px;
+    margin: -2% -2% -2% -2%;
 }
