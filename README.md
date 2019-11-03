@@ -1,24 +1,9 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## 参考URL
+https://hidden-beyond-10811.herokuapp.com/
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## 作成意図
+- Rails でwebアプリを作る練習
+- 当時Unityで二次元ゲームを作るのにはまっており、無料素材サイトにかなりお世話になった。その経験から、自分でも無料素材サイトを作ってみたいと思い、作ってみたものの。。。画力のなさが憎い。
+- 清楚系黒髪の美少女っていいよね。全人類好きでしょ。
