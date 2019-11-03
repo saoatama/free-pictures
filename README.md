@@ -1,6 +1,6 @@
 # README
 
-## 参考URL
+## URL
 https://hidden-beyond-10811.herokuapp.com/
 
 ## 作成意図
